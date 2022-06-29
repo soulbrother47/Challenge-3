@@ -1,0 +1,95 @@
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000000;     /* page background-color set to black */
+	color: #fff;
+	display: flex;
+	font-family: 'Muli', sans-serif;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	min-height: 100vh;
+}
+
+p {
+	margin: 5px 0;
+}
+
+h2 {
+	margin: 10px 0 20px;
+	text-align: center;
+    color: #FFFFFF;
+}
+
+input[type=checkbox] {
+	margin-right: 0;
+}
+
+.framePic {
+	background-color: #008080; /* #E389B9; */    /* selection box background-color set to off pink */
+	box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+	padding: 20px;
+	width: 350px;
+	max-width: 100%;
+}
+
+.boxDspl {
+	background-color: #800000;     /* rgba(0, 0, 0, 0.4); */
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 10px 1px 10px 1px;
+	height: 50px;
+	width: 100%;
+}
+
+.boxDspl #result {
+  	word-wrap: break-word;
+	max-width: calc(100% - 5px);
+}
+
+.boxDspl .btn {
+	font-size: 20px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	height: 40px;
+	width: 40px;
+}
+
+.btn {
+	border: none;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 8px 12px;
+	background-color: #3B3B98;
+}
+
+/* named btn-big */
+.btn-big {
+	display: block;
+	width: 100%;
+    color: #FFFFFF;
+}
+
+.selUser {
+	display: flex;
+    color: #FFFFFF;
+	justify-content: space-between;
+	align-items: left;
+	margin: 15px 0;
+}
+
+@media screen and (max-width: 400px) {
+	.boxDspl {
+		font-size: 14px;
+	}
+}

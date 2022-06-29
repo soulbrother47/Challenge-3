@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="view-port" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+  </head>
+
+  <body>
+	<div class="framePic">              <!-- overall window -->
+		<h2>Password Generator</h2>
+    
+		<div class="boxDspl">   <!-- holds the window to input a number -->
+        
+			<span id="result"></span>
+    	</div>
+    
+		<div class="inputUser">  <!-- holds the user number input and check boxes -->
+        
+			<div class="selUser">   <!-- checkbox next to a label -->
+				<label>Password Length.<br> Select a Number.</label>
+				<input type="number" id="length" min='4' max='26' value='26' />
+			</div>
+        
+			<div class="selUser">
+				<label>Include uppercase letters:</label> 
+				<input type="checkbox" id="uppercase" checked />
+			</div>
+        
+			<div class="selUser">
+				<label>Include lowercase letters:</label> 
+				<input type="checkbox" id="lowercase" checked />
+			</div>
+        
+			<div class="selUser">
+				<label>Include numbers:</label> 
+				<input type="checkbox" id="numbers" checked />
+			</div>
+        
+			<div class="selUser">
+			<label>Include symbols:</label> 
+			<input type="checkbox" id="symbols" checked />
+			</div>
+        
+		</div>
+    
+		<!-- type of button redefined as btn-big -->
+		<!-- display: block;
+		       width: 100%;     -->
+
+		<!-- button displays as Generate A Password -->
+		<!-- in the external.js file, addEventListener('click', () => {} listens for the click of this button -->
+
+		<button class="btn btn-big" id="generate">
+			Generate A Password
+		</button>
+    
+    <script src="external.js"> </script>  <!-- JavaScript file inclusion placed at the bottom-->
+    
+    </div>
+
+  </body>
+
+</html>
